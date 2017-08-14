@@ -1,0 +1,521 @@
+html {
+  font-family: "Open Sans", "Roboto", sans-serif;
+  font-size: 16px;
+  color: grey;
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 4rem;
+  position: fixed;
+  z-index: 20;
+  background-color: white;
+  width: 100%;
+  justify-content: space-between;
+}
+
+header .desktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header #colmarlogo {
+  padding-left: 1.5rem;
+}
+
+header #colmar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header #headernav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav {
+  text-align: right;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+ul {
+  display: flex;
+}
+
+nav li {
+  padding-right: 1rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: .5rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+}
+
+h1 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 4rem;
+  padding: 2rem 0 2rem 0;
+  color: #504A4B;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-weight: 200;
+  font-size: 2rem;
+  padding: 1rem 0 1rem 1.5rem;
+  color: #504A4B;
+}
+
+h5 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 1rem 0 1rem 1.5rem;
+  color: #504A4B;
+}
+
+p {
+  word-spacing: 2px;
+  line-height: 120%;
+  padding-left: 1.5rem;
+}
+
+
+.main-content {
+  max-width: 100%;
+  border-left: 1px solid dimgrey;
+  border-right: 1px solid dimgrey;
+  position: relative;
+  top: 4rem;
+  flex-direction: column;
+}
+
+.desktop_section {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.desktop_column {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.button {
+  background-color: #504A4B;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0.5rem 0 0.5rem 0;
+  margin: 1rem 0 0 0;
+  max-width: 18rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.course {
+  background-color: white;
+  max-width: 300px;
+  margin: 0 1rem 0 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.course h3, p {
+  padding-left: 1rem;
+}
+
+.course img {
+  max-width: 100%;
+}
+
+.link {
+  color: blue;
+  padding-top: 0.5rem;
+}
+
+.aside {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 2rem;
+  width: 423px;
+  height: auto;
+  padding: 1rem;
+  align-content: center;
+}
+
+.aside img {
+  max-width: 70%;
+  padding: 1rem;
+}
+
+.aside h3 {
+  /*padding-left: 1rem;*/
+}
+
+.courses {
+  padding: 0.5rem 0 0.5rem 1rem;
+  font-weight: 200;
+}
+
+.centraltitle {
+  text-align: center;
+}
+
+.video {
+  position: relative;
+  display: inline-block;
+}
+
+.flextxtright h3 {
+  padding-left: 0rem;
+}
+
+.flextxtright p {
+  padding-left: 0rem;
+}
+
+#name2 {
+  color: grey;
+}
+
+#banner,
+#speakers,
+#fisma {
+  background-color: gainsboro;
+}
+
+#bannerimage,
+#maininfo,
+#video {
+  max-width: 60%;
+}
+
+#bannerimage img {
+  max-width: 100%;
+  padding: 2rem 2.5rem 2rem 1.5rem;
+}
+
+#bannertxt {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-left: 2.5rem;
+}
+
+#bannertxt p {
+  font-weight: 400;
+}
+
+#maininfo img {
+  max-width: 100%;
+  padding: 2rem 2.5rem 2rem 1.5rem;
+}
+
+#maininfo h1 {
+  padding: 2rem 0 1.5rem 1.5rem;
+}
+
+#quote {
+  padding-top: 2rem;
+  letter-spacing: normal;
+  padding-bottom: 3rem;
+}
+
+#sidebarinfo {
+  margin-left: 4rem;
+  border-left: 1px solid lightgrey;
+}
+
+#campus {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+#speakers img {
+  max-width: 100%;
+  padding-right: 1rem;
+}
+
+#desktopspeakertxt {
+  padding-left: 3rem;
+}
+
+#courseinfo {
+  flex-direction: column;
+  background-color: whitesmoke;
+  padding-bottom: 2rem;
+}
+
+
+#thesisvideo {
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+}
+
+#video {
+  max-width: 100%;
+  height: auto;
+  background-color: gainsboro;
+  border: 2px solid lightgrey;
+  z-index: 9;
+  text-align: center;
+}
+
+
+#fisma img {
+  max-width: 80%;
+}
+
+#newyork h3 {
+  padding-left: 0rem;
+}
+
+#newyork p {
+  padding-left: 0rem;
+}
+
+#sidebar {
+  width: 40%;
+}
+
+#sidebar2 .flextxtright {
+  width: 65%;
+}
+
+@media only screen and (min-width: 481px) {
+  .mobile_section {
+    display: none;
+  }
+
+  .mobile_column {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  body {
+    width: auto;
+  }
+
+  .desktop_section {
+    display: none;
+  }
+
+  .desktop_column {
+    display: none;
+  }
+
+  .mobile_section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  h3 {
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+
+  a{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.7;
+  }
+
+  header #colmarlogo {
+    padding-left: 0.5rem;
+  }
+
+  #mobilebannerimage img {
+    width: 100%;
+  }
+
+  #bannertxt {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  #bannertxt p {
+    padding-left: 0rem;
+    padding-bottom: 1rem;
+  }
+
+  .button {
+    background-color: grey;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    max-width: 26rem;
+  }
+
+
+  #maininfo {
+    display: none;
+  }
+
+  .column {
+    align-items: center;
+    background-color: white;
+  }
+
+  .aside {
+    flex-direction: column;
+    margin-left: 0rem;
+    width: auto;
+    height: 400px;
+  }
+
+  .aside img {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  #speakers {
+    background-color: white;
+  }
+
+  #information.mobile_section a {
+    padding-left: 0rem;
+    padding-top: 1rem;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course img {
+    display: none;
+  }
+
+  .course {
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 400px;
+    background-color: lightgrey;
+  }
+
+  .course p {
+    display: none;
+  }
+
+  .text h3 {
+    display: none;
+  }
+
+  #desktoptext {
+    display: none;
+  }
+
+  #sidebarinfo {
+    margin-left: 0rem;
+    border-left: none;
+  }
+
+  #sidebar2 {
+    display: none;
+  }
+
+  #mobile_thesisvideo {
+    padding-left: 1rem;
+  }
+
+  .mobile_video {
+    max-width: 26rem;
+  }
+
+  footer {
+    font-size: 0.5rem;
+  }
+
+}
+
+footer {
+  display: flex;
+  margin-top: 5rem;
+  border-top: 1px solid lightgrey;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+footer #footernav {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 480px) {
+  footer #footernav.desktop {
+    display: none;
+  }
+
+  footer {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    #copyright {
+      font-size: 0.75rem;
+    }
+}
